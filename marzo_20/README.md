@@ -24,3 +24,41 @@ trabajar con markdown:
 * https://github.com/matiassingers/awesome-readme
 
 
+# Ejemplo
+
+## Titulos
+### Subtitulos
+#### and
+##### so
+###### on ....
+
+## Emphasis
+
+_italics_, **bold**, **_bold italics_**, and Strikethrough: ~~Scratch this~~
+
+## Lists
+
+1. First ordered list item
+2. Another item
+   * Unordered sub-list. 
+1. Actual numbers don't matter, just that it's a number
+   1. Ordered sub-list
+   2. Second nested element
+8. And another item.
+
+## Links
+
+[Ir al repositorio](https://github.com/juan-pineda/Modelado-1)
+
+[El mismo pero con nombre](https://github.com/juan-pineda/Modelado-1 "Repositorio de modelado 1")
+
+## Code
+Usamos la tilde invertida para incluir líneas de código  
+`import numpy as np`  
+
+Usando tres veces la tilde podemos enmarcar bloques de código:
+```
+a = np.array([1,2,3,4,5])
+b = a**2
+b.sum()
+```
