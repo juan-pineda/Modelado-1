@@ -56,4 +56,68 @@ Para que el sistema detecte los cambios en PATH hay que cerrar el terminal y abr
 Python ya debería estar disponible. Para asegurarse, en el “cmd” digitar:
 `python`
 
+## Instalando Python en Linux:
 
+### Tutorial
+https://www.pugetsystems.com/labs/hpc/How-to-Install-Anaconda-Python-and-First-Steps-for-Linux-and-Windows-917/
+
+En resumen...
+
+1. Descargar [Anaconda:](https://www.anaconda.com/download/#linux)
+
+2. Checar la integridad del archivo (sin errores) corroborando si la suma de
+verificación “sha” corresponde con lo que debería ser. Es única del archivo
+descargado y se encuentra [aquí](https://docs.continuum.io/anaconda/hashes/)
+El sha de nuestro archivo se verifica así (deben coincidir):   
+`sha256sum Anaconda3-4.3.1-Linux-x86_64.sh`  
+
+3. Correr el archivo de instalación desde un terminal:  
+`bash Anaconda3-4.3.1-Linux-x86_64.sh`
+
+4. En caso de duda, seguir las configuraciones por defecto. Si le preguntan,
+autorizar a conda a actualizar la variable PATH para que conda y python
+sean visibles para todo el sistema. En otro caso, posiblemente tendremos
+que hacerlo a mano.
+
+## Usando Python:
+
+Hay diferentes maneras de trabajar:
+
+```python
+python mi_primer_script.py
+ipython
+jupyter notebook```
+
+Qué pasa si no tengo python instalado? Es posible rodar notebooks online:
+https://mybinder.org
+
+Ingresar [este repositorio](https://github.com/juan-pineda/AeroPython),
+esperar a que cargue... y luego escoger “lessons” → “lesson_00”
+
+## Primeros pasos:
+
+Trabajar los siguientes notebooks:
+
+* 00_Quick_Python_Intro.ipynb
+* numerical-slides.ipynb
+
+## Para alternar entre versiones de python:
+
+Es posible decirle a python cuál versión queremos usar (e.g. 2.7 , 3.6).
+Para ello le pedimos a conda que cree ambientes adicionales:
+
+```conda info –envs # Checar los ambientes existentes
+conda create -n py27 python=2.7 anaconda 
+source activate py27 # To activate this environment
+source deactivate # To deactivate```
+
+Para saber en cuál ambiente estoy en un momento determinado:
+
+`python --version`
+
+Es importante estar en el ambiente correcto antes de lanzar ipython
+o jupyter notebook, pues de otra manera las cosas no van a funcionar como esperamos
+
+## Take away:
+
+Google y stackoverflow serán sus mejores amigos desde hoy :-)
