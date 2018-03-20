@@ -47,9 +47,11 @@ Abrir el “command prompt” o el “cmd”, y digitar algo como:
 
 `SETX PATH “%PATH%;C:\...\....;C:\...\...\Anaconda2`
 
-Donde los dos paths sugeridos deben corresponder a las salidas en el “anaconda prompt” de los comandos:   
-```where python 
-where conda```
+Donde los dos paths sugeridos deben corresponder a las salidas en el “anaconda prompt” de los comandos:   
+```
+where python 
+where conda
+```
 
 Para que el sistema detecte los cambios en PATH hay que cerrar el terminal y abrir uno nuevo, para que el sistema lea de nuevo el archivo de configuraciones.
 
@@ -86,7 +88,8 @@ Hay diferentes maneras de trabajar:
 ```python
 python mi_primer_script.py
 ipython
-jupyter notebook```
+jupyter notebook
+```
 
 Qué pasa si no tengo python instalado? Es posible rodar notebooks online:
 https://mybinder.org
@@ -109,7 +112,8 @@ Para ello le pedimos a conda que cree ambientes adicionales:
 ```conda info –envs # Checar los ambientes existentes
 conda create -n py27 python=2.7 anaconda 
 source activate py27 # To activate this environment
-source deactivate # To deactivate```
+source deactivate # To deactivate
+```
 
 Para saber en cuál ambiente estoy en un momento determinado:
 
